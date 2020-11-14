@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 const MENU_ITEMS: { name: string, href?: string }[] = [
   { name: "Home", href: "/" },
-  { name: "Today's Session", href: "/today" },
-  { name: "Next Sessions", href: "/next" },
-  { name: "All Sessions", href: "/all-sessions" },
-  { name: "Team", href: "/team" }  
+  { name: "About", href: "/today" },
+  { name: "Download", href: "/next" },
+  { name: "Support", href: "/all-sessions" },
+  { name: "Developers", href: "/team" },
+  { name: "Contact Us", href: "/contact" }, 
 ];
 
 @Component({
