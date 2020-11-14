@@ -11,6 +11,7 @@ import { DevelopersComponent } from './developers/developers.component';
 import { SupportComponent } from './support/support.component';
 import { DownloadComponent } from './download/download.component';
 import { HeaderComponent } from './header/header.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HeaderComponent } from './header/header.component';
     AboutComponent,
     DevelopersComponent,
     SupportComponent,
-    DownloadComponent
+    DownloadComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
