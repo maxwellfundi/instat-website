@@ -12,16 +12,30 @@ const routes: Routes = [
    path: 'home',
    component: HomeComponent
   },
- {
-    path: 'contact',
-    component: ContactComponent
-  }, 
-
   {
     path: 'about',
     component: AboutComponent
   }, 
 
+  {
+    path: 'download',
+    component: DownloadComponent
+  }, 
+
+  {
+    path: 'support',
+    component: SupportComponent
+  }, 
+
+  {
+    path: 'developers',
+    component: DevelopersComponent
+  }, 
+ {
+    path: 'contact',
+    component: ContactComponent
+  }, 
+  
   {
     path: '',
     redirectTo: '/home',
