@@ -13,10 +13,7 @@
     <div class="mobile-menu-overlay-content">
       <a *ngFor="let item of menuItems" [routerLink]="item.href"
         (click)="menuDropdownOpen = false">{{ item.name }}</a>
-      <div class="social-media-mobile">
-        <app-social-media-icons placement="mobile-menu"></app-social-media-icons>
-      </div>
+     </div>
     </div>
-  </div>
-  
+    
    
