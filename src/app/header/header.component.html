@@ -1,1 +1,19 @@
-<p>header works!</p>
+<div class="toolbar">
+    <div ><img class="logo" alt="R-Instat Logo " src="assets/images/rinstatlogo.png" /></div>
+       <div class="desktop-menu">
+      <a *ngFor="let item of menuItems" [routerLink]="item.href">{{item.name}}</a>
+    </div>
+  </div>
+
+  <!--for the mobile menu-->
+  <div id="mobileMenu" class="mobile-menu-overlay" [ngStyle]="{'height': menuDropdownOpen ? '100%' : '0%' }">
+    <!-- button to close the overlay navigation -->
+    <a href="#" class="closebtn" (click)="menuDropdownOpen = false">&times;</a>
+    <!-- menu nav links content -->
+    <div class="mobile-menu-overlay-content">
+      <a *ngFor="let item of menuItems" [routerLink]="item.href"
+        (click)="menuDropdownOpen = false">{{ item.name }}</a>
+     </div>
+    </div>
+    
+   
